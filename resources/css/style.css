@@ -67,7 +67,7 @@ nav ul li {
 
 .hero-image {
   width: 60%;
-  padding: 2rem 2.5rem 2rem 1.5rem;
+  padding: 3.2rem 4rem 3.2rem 2.4rem;
 }
 
 .hero-image img {
@@ -105,4 +105,153 @@ nav ul li {
 
 .button:active {
 
+}
+
+/*Featured*/
+
+.featured {
+  display: flex;
+  justify-content: space-between;
+}
+
+.featured-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 60%;
+}
+
+.featured-main img {
+  width: 100%;
+  height: auto;
+  padding: 3.2rem 2.4rem;
+}
+
+.featured-other {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 44%;
+}
+
+.featured-article {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.featured-article img {
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+
+.article-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/*Learning*/
+
+.learning {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.learning h2 {
+  margin: 3.2rem 0;
+}
+
+.class-tiles {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.class {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 28%;
+  height: 25rem;
+  margin: 1.6rem;
+}
+
+.class img {
+  width: 100%;
+  height: auto;
+}
+
+/*Thesis*/
+
+.thesis {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.thesis-all {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.thesis-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 60%;
+}
+
+video {
+  width: 100%;
+}
+
+.thesis-other {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 40%;
+}
+
+.thesis-other-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.thesis-other-item img {
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+
+.thesis-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/*Footer*/
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
 }
