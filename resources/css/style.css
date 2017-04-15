@@ -1,6 +1,10 @@
 html {
   font-size: 10px;
-  font-family: Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #fcf7f7;
 }
 
 .container {
@@ -10,6 +14,14 @@ html {
 
 .mobile {
   display: none;
+}
+
+p {
+  line-height: 1.4;
+}
+
+h2 {
+  font-size: 3rem;
 }
 
 @media only screen and (max-width 470px) {
@@ -26,20 +38,24 @@ html {
 /*Header*/
 
 header {
-  height: 4rem;
+  height: 6.4rem;
+  text-align: center;
+  background-color: #c92222;
+  color: #f9f5f4;
 }
 
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 24px;
+  padding: 1.5rem 2.4rem;
 }
 
 .logo {
   display: flex;
   align-items: center;
   text-transform: uppercase;
+  font-size: 2rem;
 }
 
 .logo-bold {
@@ -60,9 +76,12 @@ nav ul li {
 /*Hero*/
 
 .hero {
+  background-color: #d1cfcf;
+}
+
+.hero .container {
   display: flex;
   justify-content: space-between;
-  background-color: lightblue;
 }
 
 .hero-image {
@@ -95,8 +114,9 @@ nav ul li {
 }
 
 .button {
-  padding: .5rem 4rem;
-  background-color: grey;
+  padding: .7rem 4rem;
+  background-color: #c92222;
+  color: #f9f5f4;
 }
 
 .button:hover {
@@ -158,12 +178,7 @@ p.citation {
   justify-content: flex-start;
   align-items: center;
   padding: .6rem;
-  border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
-}
-
-.featured-article:first-child {
-  border-top: none;
 }
 
 .featured-article:last-child {
@@ -175,10 +190,10 @@ p.citation {
 }*/
 
 .featured-article img {
-  width: 35%;
+  width: 148px;
   height: auto;
   padding: 1rem;
-  flex: 2 3 auto;
+  /*flex: 2 3 auto;*/
 }
 
 .featured-article:first-child img {
@@ -195,7 +210,7 @@ p.citation {
   justify-content: center;
   align-items: flex-start;
   padding: 1rem 0;
-  flex: 1 1 auto;
+  /*flex: 1 1 auto;*/
 }
 
 .article-info h3 {
@@ -209,17 +224,20 @@ p.citation {
 }
 
 .read-more a {
-  color: darkblue;
+  color: #c92222;
 }
 
 /*Learning*/
 
 .learning {
+  background-color: #d1cfcf;
+}
+
+.learning .container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: lightblue;
 }
 
 .learning h2 {
@@ -231,6 +249,7 @@ p.citation {
   flex-flow: row wrap;
   justify-content: center;
   align-items: stretch;
+  padding-bottom: 3.2rem;
 }
 
 .class {
@@ -241,7 +260,7 @@ p.citation {
   width: 28%;
   /*height: 25rem;*/
   margin: 1.6rem;
-  background-color: white;
+  background-color: #fcf7f7;
 }
 
 .class img {
@@ -295,13 +314,23 @@ p.citation {
   justify-content: flex-start;
   align-items: flex-start;
   width: 60%;
-  margin-bottom: 3.2rem;
+  padding: 0 1.6rem 3.2rem 2.4rem;
+  border-right: 1px solid lightgrey;
 }
 
 video {
   width: 100%;
   height: auto;
-  padding: 0 1.6rem 2.4rem 2.4rem;
+  /*padding: 0 1.6rem 2.4rem 2.4rem;*/
+}
+
+.thesis-main h3 {
+  font-size: 2rem;
+  padding: 2.4rem 0 1.6rem 0;
+}
+
+.thesis-main p {
+  font-size: 1.6rem;
 }
 
 .thesis-other {
@@ -310,36 +339,59 @@ video {
   justify-content: flex-start;
   align-items: flex-start;
   width: 40%;
+  padding-right: 1.6rem;
 }
 
 .thesis-other-item {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  border-bottom: 1px solid lightgrey;
+}
+
+.thesis-other-item:last-child {
+  border-bottom: none;
 }
 
 .thesis-other-item img {
-  width: 35%;
+  width: 148px;
   height: auto;
-  padding: 1rem;
+  padding: 1.6rem;
 }
 
 .thesis-info {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.thesis-info h3 {
+  padding-bottom: .8rem;
+  font-size: 2rem;
 }
 
 /*Footer*/
 
 footer {
+  background-color: #c92222;
+  color: #f9f5f4;
+}
+
+footer .container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  height: 4rem;
+  padding: 1rem 2.4rem;
+  font-size: 1.3rem;
 }
 
 .footer-links {
   display: flex;
   justify-content: space-between;
+}
+
+.footer-links span {
+  padding: 0 1rem;
 }
