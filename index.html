@@ -10,24 +10,26 @@
   <body>
 <!-- Header -->
     <header>
-      <div class="container">
+      <div class="desktop container">
         <div class="logo">
-          <img src="resources/images/ic-logo.svg">
+          <img src="resources/images/ic-logo.svg"/>
           <span><span class="logo-bold">Colmar</span>Academy</span>
         </div>
         <nav>
-          <ul class="desktop">
+          <ul>
             <li>On Campus</li>
             <li>Online</li>
             <li>For Companies</li>
             <li>Sign In</li>
           </ul>
-          <div class="mobile">
-            <img src="resources\images\ic-on-campus.svg">
-            <img src="resources\images\ic-online.svg">
-            <img src="resources\images\ic-login.svg">
         </nav>
       </div>
+      <nav class="mobile container">
+        <img src="resources/images/ic-logo.svg"/>
+        <img src="resources\images\ic-on-campus.svg"/>
+        <img src="resources\images\ic-online.svg"/>
+        <img src="resources\images\ic-login.svg"/>
+      </nav>
     </header>
     <!-- Hero Section -->
     <div class="hero">
@@ -46,7 +48,7 @@
     </div>
     <!-- Featured Section -->
     <div class="featured container">
-      <div class="featured-main">
+      <div class="featured-main desktop">
         <img src="resources\images\information-main.jpg">
         <h3>It doesn't hurt to keep practicing</h3>
         <p>"Curabitur vitae libero in ipsum portitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna lacreet, efficitur dolor consequat, tistique ligula."</p>
@@ -86,7 +88,7 @@
     <div class="learning">
       <div class="container">
         <h2>Start learning</h2>
-        <div class="class-tiles">
+        <div class="class-tiles desktop">
           <div class="class">
             <img src="resources\images\course-software.jpg">
             <div class="class-info">
@@ -136,18 +138,26 @@
             </div>
           </div>
         </div>
+        <div class="class-tiles mobile">
+          <h3>Software Engineering</h3>
+          <h3>Computer Art</h3>
+          <h3>Design</h3>
+          <h3>Data</h3>
+          <h3>Business</h3>
+          <h3>Marketing</h3>
+        </div>
       </div>
     </div>
     <!-- Thesis -->
     <div class="thesis container">
-      <h2>Thesis Exhibit</h2>
+      <h2>Thesis Exhibits</h2>
       <div class="thesis-all">
         <div class="thesis-main">
           <video src="resources\videos\thesis.mp4" controls="controls">Reimagine Urban video project</video>
-          <h3>Reimagine urban</h3>
-          <p>"Curabitur vitae libero in ipsum portitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna lacreet, efficitur dolor consequat, tistique ligula."</p>
+          <h3 class="desktop">Reimagine urban</h3>
+          <p class="desktop">"Curabitur vitae libero in ipsum portitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna lacreet, efficitur dolor consequat, tistique ligula."</p>
         </div>
-        <div class="thesis-other">
+        <div class="thesis-other desktop">
           <div class="thesis-other-item">
             <img src="resources\images\thesis-fisma.jpg">
             <div class="thesis-info">
@@ -171,7 +181,7 @@
         <div class="copyright">
           <span>&copy;2016 Colmar Academy. All rights reserved.</span>
         </div>
-        <div class="footer-links">
+        <div class="footer-links desktop">
           <span>Terms</span>
           <span>Privacy</span>
         </div>

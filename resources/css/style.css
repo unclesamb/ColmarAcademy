@@ -24,15 +24,16 @@ h2 {
   font-size: 3rem;
 }
 
-@media only screen and (max-width 470px) {
-
-  .mobile {
-    display: inline;
-  }
+@media only screen and (max-width: 650px) {
 
   .desktop {
     display: none;
   }
+
+  .mobile {
+    display: inline-block;
+  }
+
 }
 
 /*Header*/
@@ -62,6 +63,10 @@ header .container {
   font-weight: bold;
 }
 
+.logo img {
+  fill: #f9f5f4;
+}
+
 nav ul {
   display: flex;
   justify-content: space-between;
@@ -71,6 +76,28 @@ nav ul {
 nav ul li {
   margin: 0 .5rem;
   font-size: 1.4rem;
+}
+
+header .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 650px) {
+
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  nav .mobile img {
+    fill: #f9f5f4;
+  }
+
 }
 
 /*Hero*/
@@ -100,6 +127,7 @@ nav ul li {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  padding: 3.2rem 2.4rem;
 }
 
 .hero-headline {
@@ -117,14 +145,41 @@ nav ul li {
   padding: .7rem 4rem;
   background-color: #c92222;
   color: #f9f5f4;
+  font-weight: bold;
 }
 
 .button:hover {
-
+  background-color: #f9f5f4;
+  color: #c92222;
 }
 
 .button:active {
+  background-color: #c92222;
+  color: #f9f5f4;
+}
 
+@media only screen and (max-width: 650px) {
+
+  .hero .container {
+    flex-direction: column;
+  }
+
+  .hero-image {
+    width: 100%;
+    padding: 0;
+  }
+
+  .hero-headline-section {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 3.2rem 1.6rem;
+  }
+
+  .button {
+    padding: 1rem 13rem;
+    margin: 0 1.6rem;
+  }
 }
 
 /*Featured*/
@@ -227,6 +282,44 @@ p.citation {
   color: #c92222;
 }
 
+@media only screen and (max-width: 650px) {
+
+  .featured .desktop {
+    display: none;
+  }
+
+  .featured-other {
+    width: 100%;
+    display: block;
+  }
+
+  .featured-article {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .featured-article img .desktop {
+    display: none;
+  }
+
+  .featured-article img {
+    width: 100%;
+    height: auto;
+  }
+
+  .article-info {
+    padding: 3.2rem;
+  }
+
+  .featured-article:first-child img {
+    padding-top: 1rem;
+  }
+
+  .featured-article:first-child .article-info {
+    padding-top: 3.2rem;
+  }
+}
+
 /*Learning*/
 
 .learning {
@@ -237,11 +330,13 @@ p.citation {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: stretch;
+  padding: 0 1.6rem;
 }
 
 .learning h2 {
   margin: 3.2rem 0;
+  text-align: center;
 }
 
 .class-tiles {
@@ -250,6 +345,10 @@ p.citation {
   justify-content: center;
   align-items: stretch;
   padding-bottom: 3.2rem;
+}
+
+.class-tiles.mobile {
+  display: none;
 }
 
 .class {
@@ -287,6 +386,30 @@ p.citation {
 .courses {
   text-transform: uppercase;
   padding: .8rem 0
+}
+
+@media only screen and (max-width: 650px) {
+
+  .class-tiles.desktop {
+    display: none;
+  }
+
+  .class-tiles.mobile {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    text-align: left;
+  }
+
+  .class-tiles.mobile h3 {
+    padding: 1.6rem;
+    margin: .8rem;
+    width: 100%;
+    background-color: #c92222;
+    color: #f9f5f4;
+  }
+
 }
 
 /*Thesis*/
@@ -371,6 +494,22 @@ video {
   font-size: 2rem;
 }
 
+@media only screen and (max-width: 650px) {
+
+  .thesis-other.desktop {
+    display: none;
+  }
+
+  .thesis-main .desktop {
+    display: none;
+  }
+
+  .thesis-main {
+    width: 100%;
+  }
+
+}
+
 /*Footer*/
 
 footer {
@@ -394,4 +533,12 @@ footer .container {
 
 .footer-links span {
   padding: 0 1rem;
+}
+
+@media only screen and (max-width: 650px) {
+
+  .footer-links.desktop {
+    display: none;
+  }
+
 }
